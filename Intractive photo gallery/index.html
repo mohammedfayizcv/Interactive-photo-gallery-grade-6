@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="nav">
+        <h1 align="center">Interactive Image gallery</h1>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <!-- Thumbnails -->
+            <img src="images/img1.jpg" alt="Description 1" class="gallery-img" onclick="openLightbox(); setCurrentImage(1)">
+            <img src="images/img2.jpg" alt="Description 2" class="gallery-img" onclick="openLightbox(); setCurrentImage(2)">
+            <img src="images/img3.jpg" alt="Description 2" class="gallery-img" onclick="openLightbox(); setCurrentImage(3)">
+            <img src="images/img4.jpg" alt="Description 2" class="gallery-img" onclick="openLightbox(); setCurrentImage(4)">
+            <img src="images/img5.jpg" alt="Description 2" class="gallery-img" onclick="openLightbox(); setCurrentImage(5)">
+            
+
+            <!-- Add more thumbnails here -->
+        </div>
+    </div>
+    <!-- The Modal/Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
